@@ -10,6 +10,7 @@ baseurl: "/blog" # the subpath of your site, e.g. /blog/
 twitter_username: MohamedBassem
 github_username:  MohamedBassem
 timezone: Africa/Cairo
+destination: blog
 
 # Build settings
 markdown: kramdown
