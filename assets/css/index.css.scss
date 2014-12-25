@@ -1,0 +1,91 @@
+// Place all the styles related to the index controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$background-color : #000013;
+$block-color : #19192B ;
+$block-width : 240px;
+$block-height : 245px;
+$block-margin : 1px;
+$font-size : 150px;
+
+body{
+	background-color: $background-color;
+}
+
+.container{
+	width: 100%;
+}
+
+.inner{	
+	margin : 0px auto;
+}
+
+.block{
+	color:white;
+	width: $block-width;
+	height: $block-height;
+	border-radius: 20px;
+	border: 2px solid black;
+	background-color: $block-color ;
+	margin: $block-margin;
+	float: left;
+	text-align: center;
+}
+
+.block-link{
+	color:white;
+	display: block;
+	height: $font-size;
+	font-size:$font-size;
+	padding-top: ($block-height - $font-size)/2 - 2;
+	text-decoration:none;
+}
+
+.block-span{
+	color:white;
+	display: block;
+	height: $font-size + 15;
+	font-size:$font-size + 15;
+	padding-top: ($block-height - $font-size - 15)/2 - 10;
+	text-decoration:none;
+}
+
+.image-block{
+	width: $block-width - 50;
+	padding-top: ($block-height - ($block-width - 50))/2;
+}
+
+
+.footer{
+ 	color: gray;
+ 	clear:both;
+ 	text-align: center;
+ 	font-size : small;
+ }
+
+@font-face {
+    font-family: 'Mono Social Icons Font';
+    src: url('../fonts/MonoSocialIconsFont-1.10.eot');
+    src: url('../fonts/MonoSocialIconsFont-1.10.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/MonoSocialIconsFont-1.10.woff') format('woff'),
+         url('../fonts/MonoSocialIconsFont-1.10.ttf') format('truetype'),
+         url('../fonts/MonoSocialIconsFont-1.10.svg#MonoSocialIconsFont') format('svg');
+    src: url('../fonts/MonoSocialIconsFont-1.10.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.symbol {
+    font-family: 'Mono Social Icons Font';
+    -webkit-text-rendering: optimizeLegibility;
+    -moz-text-rendering: optimizeLegibility;
+    -ms-text-rendering: optimizeLegibility;
+    -o-text-rendering: optimizeLegibility;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -ms-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+}
